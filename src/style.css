@@ -107,9 +107,7 @@ header {
   cursor: pointer;
 }
 #theme-toggle {
-  font:
-    1.15rem/1 system-ui,
-    sans-serif;
+  min-width: 4.5rem;
 }
 @media (min-width: 720px) {
   .tools {

@@ -8,18 +8,12 @@
 
   var KEY = 'dm-theme';
   var root = document.documentElement;
-  var theme;
+  var theme = 'dark';
 
   try {
-    theme = localStorage.getItem(KEY);
-  } catch (e) {
-    throw new Error('Failure in theme', { cause: e });
-  }
-  if (theme !== 'light' && theme !== 'dark') {
-    theme = matchMedia('(prefers-color-scheme: light)').matches
-      ? 'light'
-      : 'dark';
-  }
+    if (localStorage.getItem(KEY) === 'light') theme = 'light';
+  } catch (e) {}
+
   root.dataset.theme = theme;
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -28,7 +22,7 @@
 
     function sync() {
       var dark = root.dataset.theme === 'dark';
-      toggle.textContent = dark ? '\u2600\uFE0E' : '\u263E\uFE0E';
+      toggle.textContent = dark ? 'Dark' : 'Light';
       toggle.setAttribute(
         'aria-label',
         dark ? 'Switch to light mode' : 'Switch to dark mode'
@@ -40,9 +34,7 @@
       root.dataset.theme = next;
       try {
         localStorage.setItem(KEY, next);
-      } catch (e) {
-        throw new Error('Failure in setting theme', { cause: e });
-      }
+      } catch (e) {}
       sync();
     });
 
