@@ -59,6 +59,18 @@ h2,
   font-weight: 400;
 }
 
+/* ---- Plain pages (legal): no Monocraft, Manrope throughout ---- */
+.plain {
+  --mc: Manrope, system-ui, sans-serif;
+}
+.plain h2 {
+  font-weight: 800;
+}
+.plain .eyebrow,
+.plain .tool {
+  font-weight: 700;
+}
+
 /* ---- Header ---- */
 header {
   position: relative;

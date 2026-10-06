@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>DuckMod</title>
     <link href="assets/icon.png" type="image/png" rel="icon" />
-    <script src="theme-init.js"></script>
+    <script src="js/theme.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
   </head>
@@ -13,7 +13,7 @@
     <header>
       <a class="logo" href="index.html"><img src="assets/title.png" alt="DuckMod home" width="720" height="146" /></a>
       <div class="tools">
-        <a class="tool" id="github" href="#" rel="noopener">GitHub</a>
+        <a class="tool" id="github" href="https://github.com/guyanon0265/duckmod-website" target="_blank">GitHub</a>
         <button class="tool" id="theme-toggle" type="button" aria-label="Switch to light mode">&#9728;&#xFE0E;</button>
       </div>
     </header>
@@ -33,7 +33,7 @@
           <p class="note" id="requirement"></p>
           <div class="actions">
             <a class="btn primary" id="download" href="#" download>Download .mcaddon</a>
-            <a class="btn" id="github-bedrock" href="#" rel="noopener">View on GitHub</a>
+            <a class="btn" id="github-bedrock" href="https://github.com/guyanon0265/duckmod-addon" target="_blank">View on GitHub</a>
           </div>
         </section>
 
@@ -43,7 +43,7 @@
           <h2 id="heading-java">Mod</h2>
           <p class="note">Java downloads are hosted on Modrinth, where you can pick your loader and Minecraft version.</p>
           <div class="actions">
-            <a class="btn" id="modrinth" href="#" rel="noopener">Get it on Modrinth</a>
+            <a class="btn" id="modrinth" href="https://modrinth.com/mod/mcduckmod" target="_blank">Get it on Modrinth</a>
           </div>
         </section>
       </div>
@@ -53,8 +53,6 @@
       <a href="legal.html">Privacy Policy &amp; Disclaimer</a>
     </footer>
 
-    <script src="config.js"></script>
-    <script src="site.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>
