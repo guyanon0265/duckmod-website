@@ -206,7 +206,7 @@ select + .note {
   margin-bottom: 0;
 }
 
-/* ---- Buttons: outlined by default, .primary is filled ---- */
+/* ---- Buttons ---- */
 .actions {
   display: grid;
   gap: 0.6rem;
@@ -219,13 +219,14 @@ select + .note {
   font-size: 0.9rem;
   text-align: center;
   text-decoration: none;
-  color: var(--text, var(--a));
-  background: var(--fill, transparent);
-  border: 1px solid var(--a);
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--ink);
 }
 .btn.primary {
-  --fill: var(--a);
-  --text: #fff;
+  color: #fff;
+  background: var(--a);
+  border-color: var(--a);
 }
 
 /* ---- Footer ---- */
