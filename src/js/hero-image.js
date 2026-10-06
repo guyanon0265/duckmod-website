@@ -1,5 +1,15 @@
 const IMAGE_DIR = 'assets/images/';
-const IMAGES = ['java_1.png', 'java_2.png', 'java_3.png', 'java_4.png'];
+const IMAGES = [
+  'java_1.png',
+  'java_2.png',
+  'java_3.png',
+  'java_4.png',
+  'bedrock_1.jpeg',
+  'bedrock_2.jpeg',
+  'bedrock_3.jpeg',
+  'bedrock_4.jpeg',
+  'bedrock_5.jpeg',
+];
 
 export function initHeroImage() {
   const hero = document.getElementById('hero');
