@@ -12,7 +12,9 @@
 
   try {
     if (localStorage.getItem(KEY) === 'light') theme = 'light';
-  } catch (e) {}
+  } catch (e) {
+    console.warn(e);
+  }
 
   root.dataset.theme = theme;
 
@@ -34,7 +36,9 @@
       root.dataset.theme = next;
       try {
         localStorage.setItem(KEY, next);
-      } catch (e) {}
+      } catch (e) {
+        console.warn(e);
+      }
       sync();
     });
 
