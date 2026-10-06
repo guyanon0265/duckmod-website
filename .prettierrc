@@ -1,0 +1,18 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 80,
+  "proseWrap": "never",
+  "singleAttributePerLine": false,
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "options": {
+        "printWidth": 10000
+      }
+    }
+  ],
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
