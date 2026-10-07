@@ -9,6 +9,7 @@ const IMAGES = [
   'bedrock_3.jpeg',
   'bedrock_4.jpeg',
   'bedrock_5.jpeg',
+  'bedrock_6.jpeg',
 ];
 
 export function initHeroImage() {
