@@ -1,9 +1,10 @@
-const BASE_URL =
-  'https://cdn.jsdelivr.net/gh/guyanon0265/duckmod-addon@main/releases/';
-const VERSIONS_URL = BASE_URL + 'versions.json';
+const REPO_URL = 'https://github.com/guyanon0265/duckmod-addon';
+const VERSIONS_URL =
+  'https://raw.githubusercontent.com/guyanon0265/duckmod-addon/main/releases/versions.json';
 
 const fileName = (v) => 'duckmod-addon-' + v.version + '.mcaddon';
-const downloadUrl = (v) => BASE_URL + 'v' + v.version + '/' + fileName(v);
+const downloadUrl = (v) =>
+  REPO_URL + '/releases/download/v' + v.version + '/' + fileName(v);
 
 async function loadVersions() {
   const response = await fetch(VERSIONS_URL);
